@@ -1,0 +1,123 @@
+<!-- <span
+  style="display: none"
+  *ngFor="
+    let d of dataForPaginator
+      | paginate
+        : { itemsPerPage: NoOfitemsPerPage, currentPage: currentPageIndex }
+  "
+>
+</span> -->
+<div fxFlex="95%" class="backgroundTable">
+  <ag-grid-angular
+    style="width: 100%; height: 100%"
+    class="ag-theme-balham"
+    [gridOptions]="gridOptions"
+    (columnResized)="onColumnResized()"
+    [frameworkComponents]="frameworkComponents"
+    (gridSizeChanged)="onColumnsChanged()"
+    (gridReady)="onGridReady($event)"
+    [enableCellTextSelection]="true"
+    [rowData]="rowData"
+    [rowSelection]="'multiple'"
+    (rowSelected)="onRowSelected($event)"
+    [overlayLoadingTemplate]="overlayLoadingTemplate"
+    [overlayNoRowsTemplate]="overlayNoRowsTemplate"
+    pagination
+    [paginationPageSize]="paginationPageSize"
+    [suppressPaginationPanel]="true"
+    [tooltipShowDelay]="tooltipShowDelay"
+    [columnDefs]="columnDefs"
+  >
+  </ag-grid-angular>
+</div>
+<div
+  fxLayout="row"
+  fxLayoutAlign="start center"
+  style="
+    place-content: flex-start;
+    padding: 0.6%;
+    border: 0.5px solid #eef1f2;
+    border-radius: 1%;
+  "
+>
+  <div fxFlex="30" fxLayoutAlign="start center" class="rowoptions">
+    <span
+      >Showing
+      <select
+        (change)="changeRowsperPage($event)"
+        class="select_rows"
+        name="rows"
+        id="rows"
+      >
+        <option value="50">50</option>
+        <option value="100">100</option>
+        <option value="200">200</option>
+      </select>
+
+      rows per page</span
+    >
+  </div>
+  <div *ngIf="hideNshowPaginator" fxFlex="40" fxLayoutAlign="center" style="padding-right: 3%">
+    <pagination-controls
+      (pageChange)="paginationChangeEvent($event)"
+    ></pagination-controls>
+  </div>
+  <!-- <div
+    *ngIf="pageName === 'TestRun'"
+    fxFlex="30"
+    class="tableCountText"
+    fxLayoutAlign="end center"
+    fxLayout="row wrap"
+    fxLayoutGap="2%"
+  >
+    <div>
+      Completed Test Runs: <b>&nbsp;{{ completedTestRun }}</b> |
+    </div>
+
+    <div>
+      In-progress:
+      <b>&nbsp;{{ InProgressTestRun }}</b>
+    </div>
+  </div>
+
+  <div
+    *ngIf="pageName === 'TestCaseRun'"
+    fxFlex="30"
+    class="tableCountText"
+    fxLayoutAlign="end center"
+    fxLayout="row wrap"
+    fxLayoutGap="2%"
+  >
+    <div fxLayout="column" fxFlex="60" class="progressBox">
+      <div class="TestRunprogressText" fxLayoutAlign="stretch">
+        {{ percentageCompletion }} Completed ({{
+          numberOfCompletedTestcases
+        }}/{{ totalNumberofTestcases }})
+      </div>
+      <div class="progress progress-xs TestRunprogressBar">
+        <div
+          class="progress-bar bg-progeesColor"
+          role="progressbar"
+          aria-valuemin="0"
+          aria-valuemax="100"
+          [style.width]="percentageCompletion"
+        ></div>
+      </div>
+    </div>
+  </div>
+
+  
+  <div
+    *ngIf="pageName === 'Specification'"
+    fxFlex="30"
+    class="tableCountText"
+    fxLayoutAlign="end center"
+    fxLayout="row wrap"
+    fxLayoutGap="2%"
+  >
+  <div>
+    Total TRDs: <b>&nbsp;{{ totalTrds }}</b> 
+  </div>
+  </div> -->
+
+</div>

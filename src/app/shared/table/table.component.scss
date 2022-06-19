@@ -1,0 +1,259 @@
+:host .ag-header {
+  height: 25px !important;
+  //   margin: 0 12.1px 0 24px !important;
+  font-family: IBMPlexSans-Bold !important;
+  font-size: 100% !important;
+  font-weight: bold !important;
+  font-stretch: normal !important;
+  font-style: normal !important;
+  line-height: 1.31 !important;
+  letter-spacing: normal !important;
+  text-align: left !important;
+  background-color: #eef1f2;
+
+  border-width: 0px !important;
+  // border-bottom-width: 0px;
+  border-style: solid;
+  align-items: center;
+  box-sizing: border-box;
+  border-color: white;
+}
+:host .ag-cell-wrapper {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+:host .ag-header-cell-text {
+  color: #2d3439 !important;
+}
+
+:host .ag-theme-balham .ag-row {
+  border-width: 0px !important;
+}
+
+:host .ag-theme-balham .ag-root-wrapper {
+  background-color: white !important;
+  box-shadow: 0px 0px 2px 0 rgba(0, 0, 0, 0.16) !important;
+  border: white;
+}
+
+:host
+   
+  .ag-theme-balham
+  .ag-cell.ag-cell-last-left-pinned:not(.ag-cell-range-right):not(.ag-cell-range-single-cell) {
+  border-right: solid 1px;
+  // border-right-color: #bdc3c7;
+  border-right-color: whitesmoke;
+  box-shadow: 0px 0px 2px 0 rgba(0, 0, 0, 0.16) !important;
+}
+
+:host   .ag-cell-focus,
+.ag-cell {
+  border: none !important;
+}
+
+:host   .ag-cell {
+  font-family: IBMPlexSans-Regular;
+  font-size: 100%;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #2d3439;
+  word-break: break-all;
+  padding-right: 1.5% !important;
+  padding-top: 0%;
+
+  border-width: 0 !important;
+  // border-bottom-width: 4px;
+  border-style: solid;
+  align-items: center;
+  box-sizing: border-box;
+  border-color: white;
+}
+
+:host   .ag-cell-wrapper {
+  display: flex;
+  align-items: flex-start;
+  height: 100%;
+  // padding-top: 8px;
+}
+:host   .ag-horizontal-left-spacer {
+  // height: 0%;
+  // min-width: 0;
+  overflow-x: hidden;
+  background-color: #edf3f7;
+}
+:host   .ag-theme-balham .ag-overlay-loading-center {
+  background-color: white;
+  background-color: var(--ag-background-color, white);
+  border: 0px solid;
+  border-color: #bdc3c7;
+  border-color: var(--ag-border-color, #bdc3c7);
+  color: #000;
+  color: var(--ag-foreground-color, #000);
+  padding: 16px;
+}
+
+.loadingText {
+  font-size: 112.5%;
+  font-family: "IBMPlexSans-Regular";
+}
+
+:host   .fetchingIcon {
+  font-size: 3em;
+  color: #0067ab;
+}
+
+:host   .ngx-pagination .disabled {
+  padding: 0.1875rem 0.625rem;
+  cursor: default;
+  font-family: IBMPlexSans-Regular;
+  font-size: 81.25%;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.25;
+  letter-spacing: normal;
+  text-align: center;
+  color: #8c9498;
+}
+
+// li.pagination-previous > a
+:host   li.pagination-next > a {
+  font-family: IBMPlexSans-Regular;
+  font-size: 81.25%;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.25;
+  letter-spacing: normal;
+  text-align: center;
+  color: #0067ab;
+  outline: none;
+}
+
+:host   li.pagination-previous > a {
+  font-family: IBMPlexSans-Regular;
+  font-size: 81.25%;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.25;
+  letter-spacing: normal;
+  text-align: center;
+  color: #0067ab;
+  outline: none;
+}
+
+:host   .ngx-pagination .current {
+  padding: 2px 0;
+  border-radius: 1px;
+  background-color: #0067ab;
+  font-family: IBMPlexSans-Regular;
+  font-size: 81.25%;
+  padding: 0% 3%;
+  color: #fafbfd;
+  cursor: default;
+}
+:host   .ngx-pagination a,
+.ngx-pagination button {
+  font-family: IBMPlexSans-Regular;
+  font-size: 81.25%;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.25;
+  letter-spacing: normal;
+  text-align: center;
+  color: #2d3439;
+  border-radius: 0;
+  outline: none;
+}
+:host   .ngx-pagination {
+  margin-left: 0;
+  margin-bottom: 0rem;
+  padding-left: 0;
+  width: 150%;
+}
+.rowoptions {
+  font-family: IBMPlexSans-Regular;
+  font-size: 81.25%;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.25;
+  letter-spacing: normal;
+  text-align: left;
+  color: #62656a;
+}
+
+.select_rows {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  border-radius: 4px;
+  border: solid 1px #dddde2;
+  background-color: #f4f8fb;
+  outline: none;
+}
+
+.tableCountText {
+  font-family: IBMPlexSans-Regular;
+  font-size: 81.25%;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.25;
+  letter-spacing: normal;
+  text-align: left;
+  color: #2d3439;
+}
+
+.progressLabel {
+  margin: 1% 3% 0% 3% !important;
+  font-family: IBMPlexSans-Bold;
+  font-size: 62.5%;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.57;
+  letter-spacing: normal;
+  text-align: left;
+  color: #333333;
+}
+
+.TestRunprogressBar {
+  // margin: 2% 3% 2% 3% !important;
+}
+
+.TestRunprogressText {
+  // margin: 1% 3% 1% 3% !important;
+  font-family: IBMPlexSans-Regular;
+  font-size: 62.5%;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.57;
+  letter-spacing: normal;
+  text-align: left;
+  color: #333333;
+}
+
+.bg-progeesColor {
+  background-color: #0cb14b;
+}
+
+.backgroundTable{
+  background-color: white !important;
+  box-shadow: 0px 0px 2px 0 rgba(0, 0, 0, 0.16) !important;
+  border: white;
+}
+:host   .ag-row-even {
+  background: #fcfdfe
+}
+
+:host   .ag-row-odd {
+  background: #edf3f7
+}

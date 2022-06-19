@@ -1,0 +1,8 @@
+<p>okta works!</p>
+<div *ngIf="getUserName">
+    <h1>Hello, {{getUserName}} </h1>
+    <button (click)="logout()">Logout</button>
+</div>
+<div *ngIf="!getUserName">
+    <button (click)="login()">Login</button>
+</div>

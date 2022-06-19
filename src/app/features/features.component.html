@@ -1,0 +1,28 @@
+<p>features works!</p>
+
+
+<!-- <div fxFlex="98%" fxLayout="column">
+    <app-table fxFlex="100%" fxLayout="column" #testCaseTable [gridOptions]="gridOptions"
+      [columnDefs]="listCoulmns" [Data]="testCases"></app-table>
+  </div> -->
+
+
+  <div class="modal-body">
+    <div fxFlex="98%" class="buildVersionDiv">
+      <ag-grid-angular 
+        style="width: 100%; height: 90%"
+        class="ag-theme-balham"
+        [gridOptions]="testRunGridOptions"
+        (columnResized)="onColumnResized()"
+        (gridReady)="onGridReady($event)"
+        [enableCellTextSelection]="true"
+        [rowData]="displaytestRun"
+        [suppressColumnVirtualisation]="true"
+        [suppressRowVirtualisation]="true"
+        [overlayLoadingTemplate]="overlayLoadingTemplate"
+        [overlayNoRowsTemplate]="overlayNoRowsTemplate"
+        [columnDefs]="testRunCoulmns"
+      >
+      </ag-grid-angular>
+    </div>
+</div>
