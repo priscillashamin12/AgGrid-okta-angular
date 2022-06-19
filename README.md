@@ -11,9 +11,9 @@ Documentation - https://developer.okta.com/docs/guides/
 1. Okta - Okta is a customizable, secure, and drop-in solution to add authentication and authorization services to your applications. Each time a user tries to authenticate, Okta will verify their identity and send the required information back to your app.
 
 Secure Angular 9 App with OAuth 2.0 and Open ID connect Okta
-https://www.youtube.com/watch?v=6bf5_IsAv5g – WORKED! 
+https://www.youtube.com/watch?v=6bf5_IsAv5g
 Find it in (Sample Angular - Okta)
-1)	Sign up Okta - https://developer.okta.com/signup/ - 123@jas
+1)	Sign up Okta - https://developer.okta.com/signup/
 2)	Create SPA Application on Okta
 3)	Add okta package on application
 4)	Add configuration of Okta OAuth2 and its module
